@@ -1,91 +1,147 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title></title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="">
-<link rel="shortcut icon" href="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+  <link rel="shortcut icon" href="">
 </head>
+
 <body>
+
   <!-- タスクの追加 -->
-  <h1>add task</h1>
-  <table>
-    <tr>
-      <th>task name: </th>
-      <td><input></td>
-    </tr>
-    <tr>
-      <th>task details: </th>
-      <td><input></td>
-    </tr>
-  </table>
-  <button>add</button>
-  <button>clear</button>
+  <aside>
+    <section>
+      <h1>add task</h1>
+      <table>
+        <tbody>
+          <tr>
+            <th>
+              <div>task name: </div>
+            </th>
+            <td><input type="text" placeholder="task name" /></td>
+          </tr>
+          <tr>
+            <th>
+              <div>task details: </div>
+            </th>
+            <td><textarea rows="3" cols="40" placeholder="task details"></textarea></td>
+          </tr>
+          <tr>
+            <th>
+              <div>split tasks: </div>
+            </th>
+            <td>
+              <div><input type="text" placeholder="split task" /></div>
+              <div><input type="text" placeholder="split task" /></div>
+              <div><input type="text" placeholder="split task" /></div>
+              <div><input type="text" placeholder="split task" /></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button>add</button>
+              <button>clear</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </aside>
 
   <!-- タスク一覧 -->
-  <h1>task list</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>status</th>
-        <th>task name</th>
-        <th>task details</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><input type="checkbox" checked="checked"></td>
-        <td>タスク１</td>
-        <td>hogehoge</td>
-      </tr>
-      <tr>
-        <td><input type="checkbox"></td>
-        <td>タスク２</td>
-        <td>hogehoge</td>
-      </tr>
-      <tr>
-        <td><input type="checkbox"></td>
-        <td>タスク２</td>
-        <td>hogehoge</td>
-      </tr>
-      <tr>
-        <td><input type="checkbox"></td>
-        <td>タスク２</td>
-        <td>hogehoge</td>
-      </tr>
-      <tr>
-        <td><input type="checkbox"></td>
-        <td>タスク２</td>
-        <td>hogehoge</td>
-      </tr>
-      <tr>
-        <td><input type="checkbox"></td>
-        <td>タスク２</td>
-        <td>hogehoge</td>
-      </tr>
-      <tr>
-        <td><input type="checkbox"></td>
-        <td>タスク２</td>
-        <td>hogehoge</td>
-      </tr>
-      <tr>
-        <td><input type="checkbox"></td>
-        <td>タスク２</td>
-        <td>hogehoge</td>
-      </tr>
-      <tr>
-        <td><input type="checkbox"></td>
-        <td>タスク２</td>
-        <td>hogehoge</td>
-      </tr>
-      <tr>
-        <td><input type="checkbox"></td>
-        <td>タスク２</td>
-        <td>hogehoge</td>
-      </tr>
-    </tbody>
-  </table>
+  <aside>
+    <section>
+      <h1>task list</h1>
+      <table>
+        <tbody>
+          <tr>
+            <th><input type="checkbox" checked="checked" /></th>
+            <td>
+              <div>タスク１</div>
+              <div>hogehoge</div>
+            </td>
+          </tr>
+          <tr>
+            <th><input type="checkbox" /></th>
+            <td>
+              <div>タスク２</div>
+              <div>hogehoge</div>
+            </td>
+          </tr>
+          <tr>
+            <th><input type="checkbox" /></th>
+            <td>
+              <div>タスク３</div>
+              <div>hogehoge</div>
+              <div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <th><input type="checkbox" checked="checked" /></th>
+                      <td><div>タスク３－１</div></td>
+                    </tr>
+                    <tr>
+                      <th><input type="checkbox" /></th>
+                      <td><div>タスク３－２</div></td>
+                    </tr>
+                    <tr>
+                      <th><input type="checkbox" /></th>
+                      <td><div>タスク３－３</div></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </aside>
+
+  <!-- タスク更新 -->
+  <!-- オーバーレイで実装予定 -->
+  <aside>
+    <section>
+      <h1>update task</h1>
+      <table>
+        <tbody>
+          <tr>
+            <th>
+              <div>task name: </div>
+            </th>
+            <td><input type="text" placeholder="task name" /></td>
+          </tr>
+          <tr>
+            <th>
+              <div>task details: </div>
+            </th>
+            <td><textarea rows="3" cols="40" placeholder="task details"></textarea></td>
+          </tr>
+          <tr>
+            <th>
+              <div>split tasks: </div>
+            </th>
+            <td>
+              <div><input type="text" placeholder="split task" /></div>
+              <div><input type="text" placeholder="split task" /></div>
+              <div><input type="text" placeholder="split task" /></div>
+              <div><input type="text" placeholder="split task" /></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button>update</button>
+              <button>delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </aside>
+
 </body>
 </html>
