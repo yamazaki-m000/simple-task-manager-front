@@ -1,5 +1,5 @@
 import React from "react"
-import * as pageInfo from "../../constants/pageInfo";
+import * as pageInfo from "constants/pageInfo";
 
 /** ホーム画面 */
 export default class Home extends React.Component {

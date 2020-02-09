@@ -1,7 +1,7 @@
 import React from 'react';
 import {　BrowserRouter as Router, Redirect,　Switch,　Route　} from "react-router-dom";
-import Home from "./components/pages/home"
-import * as pageInfo from "./constants/pageInfo";
+import Home from "components/pages/home"
+import * as pageInfo from "constants/pageInfo";
 
 function App() {
   return (
