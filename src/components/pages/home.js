@@ -1,6 +1,6 @@
+import { InputTextareaRecord, InputTextRecord } from "components/common/parts/inputRecord";
 import * as pageInfo from "constants/pageInfo";
 import React from "react";
-import { Link } from "react-router-dom";
 
 /** ホーム画面 */
 export default class Home extends React.Component {
@@ -15,39 +15,25 @@ export default class Home extends React.Component {
 
   /** 入力ボックスの入力値をstateに格納 */
   handleChangeInputText = e => {
-      this.setState({ [e.target.name]: e.target.value });
+    this.setState({ [e.target.name]: e.target.value });
   }
 
   render() {
+    // inputRecordの属性情報
+    const inputSetting = { onChange: this.handleChangeInputText }
     return (
       <aside>
         <section>
           <h1>Add task</h1>
           <table>
             <tbody>
-              <tr>
-                <th>
-                  <div>task name: </div>
-                </th>
-                <td>
-                  <input type="text" placeholder="task name" name="taskName" value={this.state.taskName} onChange={this.handleChangeInputText} />
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  <div>task details: </div>
-                </th>
-                <td>
-                  <textarea rows="3" cols="40" placeholder="task details" name="taskDetails" value={this.state.taskDetails} onChange={this.handleChangeInputText} />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <Link to="" onClick={this.handleAddTask}>add</Link>
-                  &nbsp;&nbsp;
-                  <Link to="" onClick={this.handleClear}>clear</Link>
-                </td>
-              </tr>
+              <InputTextRecord titleName="task name: "
+                inputData={{ name: "taskName", value: this.state.taskName }}
+                inputSetting={{ placeholder: "task name", ...inputSetting }} />
+
+              <InputTextareaRecord titleName="task details: "
+                inputData={{ name: "taskName", value: this.state.taskName }}
+                inputSetting={{ placeholder: "ask details", rows: "3", cols: "40", ...inputSetting }} />
             </tbody>
           </table>
         </section>
