@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from 'serviceWorker';
+import { amplify_initialize } from "config/amplify";
+
+amplify_initialize()
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

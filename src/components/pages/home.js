@@ -22,6 +22,7 @@ export default class Home extends React.Component {
   render() {
     // inputRecordの属性情報
     const inputSetting = { onChange: this.handleChangeInputText }
+
     return (
       <aside>
         <TableSection header="Add task">
