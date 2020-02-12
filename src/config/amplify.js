@@ -6,7 +6,7 @@ export function amplify_initialize() {
             endpoints: [
                 {
                     name: "simple-task-manager-api",
-                    endpoint: "https://s2z644n78l.execute-api.ap-northeast-1.amazonaws.com/prd",
+                    endpoint: "https://s2z644n78l.execute-api.ap-northeast-1.amazonaws.com",
                     region: "ap-northeast-1"
                 }
             ]
